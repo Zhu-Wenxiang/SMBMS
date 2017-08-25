@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="smbms@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="smbms">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bdqn"/>
+    <schema id="4" parent="1" name="holly"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="myschool"/>
+    <schema id="7" parent="1" name="mysql"/>
+    <schema id="8" parent="1" name="news"/>
+    <schema id="9" parent="1" name="onlineqa"/>
+    <schema id="10" parent="1" name="performance_schema"/>
+    <schema id="11" parent="1" name="sakila"/>
+    <schema id="12" parent="1" name="school"/>
+    <schema id="13" parent="1" name="sys"/>
+    <schema id="14" parent="1" name="world"/>
+    <table id="15" parent="2" name="smbms_bill"/>
+    <table id="16" parent="2" name="smbms_provider"/>
+    <table id="17" parent="2" name="smbms_user"/>
+    <column id="18" parent="15" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="19" parent="15" name="billCode">
+      <Position>2</Position>
+      <Comment>账单编码</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="20" parent="15" name="productName">
+      <Position>3</Position>
+      <Comment>商品名称</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="21" parent="15" name="productDesc">
+      <Position>4</Position>
+      <Comment>商品描述</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="22" parent="15" name="productUnit">
+      <Position>5</Position>
+      <Comment>商品单位</Comment>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="23" parent="15" name="productCount">
+      <Position>6</Position>
+      <Comment>商品数量</Comment>
+      <DataType>decimal(20,2)|0</DataType>
+    </column>
+    <column id="24" parent="15" name="totalPrice">
+      <Position>7</Position>
+      <Comment>商品总价</Comment>
+      <DataType>decimal(20,2)|0</DataType>
+    </column>
+    <column id="25" parent="15" name="isPayment">
+      <Position>8</Position>
+      <Comment>是否付款（1.已付款，2.未付款）</Comment>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="26" parent="15" name="providerId">
+      <Position>9</Position>
+      <Comment>供应商Id</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="27" parent="15" name="creationDate">
+      <Position>10</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="28" parent="15" name="createdBy">
+      <Position>11</Position>
+      <Comment>创建者ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="29" parent="15" name="modifyDate">
+      <Position>12</Position>
+      <Comment>更新日期</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="30" parent="15" name="modifyBy">
+      <Position>13</Position>
+      <Comment>更新者Id</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <key id="31" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="32" parent="16" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="33" parent="16" name="proCode">
+      <Position>2</Position>
+      <Comment>供应商编码</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="34" parent="16" name="proName">
+      <Position>3</Position>
+      <Comment>供应商名称</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="35" parent="16" name="proDesc">
+      <Position>4</Position>
+      <Comment>供应商描述</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="36" parent="16" name="proContact">
+      <Position>5</Position>
+      <Comment>供应商联系人</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="37" parent="16" name="proPhone">
+      <Position>6</Position>
+      <Comment>供应商电话</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="38" parent="16" name="proAddress">
+      <Position>7</Position>
+      <Comment>供应商地址</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="39" parent="16" name="proFax">
+      <Position>8</Position>
+      <Comment>供应商传真</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="40" parent="16" name="createdBy">
+      <Position>9</Position>
+      <Comment>创建者(userId)</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="41" parent="16" name="creationDate">
+      <Position>10</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="42" parent="16" name="modifyBy">
+      <Position>11</Position>
+      <Comment>更新人</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="43" parent="16" name="modifyDate">
+      <Position>12</Position>
+      <Comment>更新时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="44" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="45" parent="17" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="46" parent="17" name="userCode">
+      <Position>2</Position>
+      <Comment>用户编码</Comment>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="47" parent="17" name="userName">
+      <Position>3</Position>
+      <Comment>用户名称</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="48" parent="17" name="userPassword">
+      <Position>4</Position>
+      <Comment>用户密码</Comment>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="49" parent="17" name="gender">
+      <Position>5</Position>
+      <Comment>性别（1.男2.女）</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="50" parent="17" name="birthday">
+      <Position>6</Position>
+      <Comment>出生日期</Comment>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="51" parent="17" name="phone">
+      <Position>7</Position>
+      <Comment>手机电话</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="52" parent="17" name="address">
+      <Position>8</Position>
+      <Comment>地址</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="53" parent="17" name="userType">
+      <Position>9</Position>
+      <Comment>用户类型（1.管理员2.经理3.普通员工）</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="54" parent="17" name="createdBy">
+      <Position>10</Position>
+      <Comment>创建者（userId）</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="55" parent="17" name="creationTime">
+      <Position>11</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="56" parent="17" name="modifyBy">
+      <Position>12</Position>
+      <Comment>更新者（userId）</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="57" parent="17" name="modifyTime">
+      <Position>13</Position>
+      <Comment>更新时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="58" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
