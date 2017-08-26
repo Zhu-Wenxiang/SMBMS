@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -6,33 +6,33 @@
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
-<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
 <script type="text/javascript">
 	function logout() {
-		top.location = "${pageContext.request.contextPath}/logout.do";
+		top.location = "login.jsp";
 	}
 </script>
 </head>
 <body class="frame-bd">
 	<ul class="left-menu">
 		<li><a href="billList.html" target="mainFrame"><img
-				src="../images/btn_bill.gif" />
+				src="images/btn_bill.gif" />
 		</a>
 		</li>
 		<li><a href="providerList.html" target="mainFrame"><img
-				src="${pageContext.request.contextPath}/images/btn_suppliers.gif" />
+				src="images/btn_suppliers.gif" />
 		</a>
 		</li>
-		<li><a href="${pageContext.request.contextPath}/user.do?method=query" target="mainFrame"><img
-				src="${pageContext.request.contextPath}/images/btn_users.gif" />
+		<li><a href="userList.html" target="mainFrame"><img
+				src="images/btn_users.gif" />
 		</a>
 		</li>	
 		<li><a href="updatePwd.html" target="mainFrame"><img
-				src="${pageContext.request.contextPath}/images/btn_password.gif" />
+				src="images/btn_password.gif" />
 		</a>
 		</li>
 		<li><a href="#" onClick="logout();"><img
-				src="${pageContext.request.contextPath}/images/btn_exit.gif" />
+				src="images/btn_exit.gif" />
 		</a>
 		</li>
 	</ul>
