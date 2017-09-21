@@ -56,7 +56,7 @@ public class UserServiceImpl implements UserService{
         try {
             connection=BaseDao.getConnection();
             user=userDao.getLoginUser(connection,userCode);
-            System.out.println("取到userduixiang========="+user.getUserName());
+            System.out.println("取到user对象========="+user.getUserName());
         } catch (Exception e) {
             e.printStackTrace();
         }finally {

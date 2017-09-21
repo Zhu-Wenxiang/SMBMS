@@ -126,11 +126,9 @@ public class User {
     }
 
     public int getAge() {
+        Date today=new Date();
+        age=today.getYear()-birthday.getYear();
         return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     @Override
