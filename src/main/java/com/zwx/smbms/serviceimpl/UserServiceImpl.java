@@ -49,4 +49,20 @@ public class UserServiceImpl implements UserService{
         }
         return flag;
     }
+
+    public User login(String userCode) {
+        Connection connection=null;
+        User user=null;
+        try {
+            connection=BaseDao.getConnection();
+            user=userDao.getLoginUser(connection,userCode);
+            System.out.println("取到userduixiang========="+user.getUserName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            BaseDao.closeResource(connection,null,null);
+        }
+
+        return user;
+    }
 }

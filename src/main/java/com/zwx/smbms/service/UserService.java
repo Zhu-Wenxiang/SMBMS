@@ -6,4 +6,6 @@ public interface UserService {
 
     //向数据库中添加数据的方法,要求使用事务
     public boolean add(User user);
+    //获取登录用户
+    public User login(String userCode);
 }

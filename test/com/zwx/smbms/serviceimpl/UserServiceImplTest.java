@@ -19,8 +19,8 @@ public class UserServiceImplTest {
     public void testadd() throws Exception {
         boolean result=false;
         User user=new User();
-        user.setUserCode("hanyunxi");
-        user.setUserName("韩云溪");
+        user.setUserCode("jackson");
+        user.setUserName("王嘉尔");
         user.setUserPassword("000000");
         result=userService.add(user);
         System.out.println(result);
