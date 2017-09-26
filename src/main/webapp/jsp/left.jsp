@@ -8,7 +8,7 @@
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
 <script type="text/javascript">
 	function logout() {
-		top.location = "login.jsp";
+		top.location = "${pageContext.request.contextPath}/logout.do";
 	}
 </script>
 </head>
@@ -31,7 +31,7 @@
 		</a>
 		</li>
 		<li><a href="#" onClick="logout();"><img
-				src="images/btn_exit.gif" />
+				src="${pageContext.request.contextPath}/images/btn_exit.gif" />
 		</a>
 		</li>
 	</ul>

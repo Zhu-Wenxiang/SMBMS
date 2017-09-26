@@ -9,4 +9,6 @@ public class Constants {
     //密码错误的显示信息
     public final static String PASSWORD_ERROR="passwordError";
     public final static String PASSWORD_ERROR_HINT="您的密码不正确，请重新输入";
+    //存入request中的用户列表字符串
+    public final static String USER_LIST="userlist";
 }

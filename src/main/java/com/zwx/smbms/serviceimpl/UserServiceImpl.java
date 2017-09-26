@@ -9,6 +9,7 @@ import com.zwx.smbms.service.UserService;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.List;
 
 public class UserServiceImpl implements UserService{
 
@@ -64,5 +65,23 @@ public class UserServiceImpl implements UserService{
         }
 
         return user;
+    }
+
+    public List<User> getUserList(String userName) {
+        List<User> users=null;
+        Connection connection=null;
+       /*应该在servlet里面进行该验证
+       if (userName==null) {
+            userName="";
+        }*/
+        try {
+            connection=BaseDao.getConnection();
+            users=userDao.getUserList(connection,userName);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            BaseDao.closeResource(connection,null,null);
+        }
+        return users;
     }
 }

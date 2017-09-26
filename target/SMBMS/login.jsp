@@ -9,10 +9,10 @@
   function validate(){
 		//window.location.href="jsp/frame.jsp"
 	  //验证
-		var usercode=document.getElementById("userCode");
-		var password=document.getElementById("userPassword");
-		var usercodeSpan=document.getElementById("loginNameSpan");
-		var passwordSpan=document.getElementById("passwordSpan");
+		var usercode=document.getElementById("userCode").value;
+		var password=document.getElementById("userPassword").value;
+		var usercodeSpan=document.getElementById("loginNameSpan").value;
+		var passwordSpan=document.getElementById("passwordSpan").value;
 		var flag=true;
 		if (usercode==null || usercode==''){
 		    usercodeSpan.innerHTML="请输入用户名！";

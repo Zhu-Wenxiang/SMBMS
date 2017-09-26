@@ -7,6 +7,8 @@ import com.zwx.smbms.pojo.User;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDaoImpl implements UserDao{
 
@@ -24,6 +26,7 @@ public class UserDaoImpl implements UserDao{
         return updateRows;
     }
 
+    //根据用户的user Code查询特定用户，旨在为登陆功能服务
     public User getLoginUser(Connection connection, String userCode) throws Exception {
         PreparedStatement pstm=null;
         ResultSet resultSet=null;
@@ -51,5 +54,37 @@ public class UserDaoImpl implements UserDao{
         }
         BaseDao.closeResource(null,pstm,resultSet);
         return user;
+    }
+
+    //根据用户名查找用户，主要用于查询用户列表查询及用户检索
+    public List<User> getUserList(Connection connection, String userName) throws Exception {
+        PreparedStatement pstm=null;
+        ResultSet resultSet=null;
+        List<User> userList=new ArrayList<User>();
+        if (null!=connection) {
+           String sql="select * from smbms_user where userName like ?";
+           Object[] params={"%"+userName+"%"};
+           pstm=connection.prepareStatement(sql);
+           resultSet=BaseDao.execute(connection,pstm,resultSet,sql,params);
+           while(resultSet.next()) {
+               User user = new User();
+               user.setUserName(resultSet.getString("userName"));
+               user.setUserPassword(resultSet.getString("userPassword"));
+               user.setUserCode(resultSet.getString("userCode"));
+               user.setBirthday(resultSet.getDate("birthday"));
+               user.setCreationTime(resultSet.getTimestamp("creationDate"));
+               user.setId(resultSet.getInt("id"));
+               user.setAddress(resultSet.getString("address"));
+               user.setCreatedBy(resultSet.getInt("createdBy"));
+               user.setModifyBy(resultSet.getInt("modifyBy"));
+               user.setGender(resultSet.getInt("gender"));
+               user.setPhone(resultSet.getString("phone"));
+               user.setUserType(resultSet.getInt("userType"));
+               user.setModifyTime(resultSet.getDate("modifyDate"));
+               userList.add(user);
+           }
+        }
+        BaseDao.closeResource(null,pstm,resultSet);
+        return userList;
     }
 }
