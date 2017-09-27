@@ -16,7 +16,7 @@ import java.util.List;
 public class UserSearchServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
        String userName=request.getParameter("userName");
-       List<User> userList=new ArrayList<User>();
+       List<User> userList=null;
        //一定要做非空验证，这样一开始请求的时候才能查找到数据
         if (userName==null) {
             userName="";

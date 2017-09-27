@@ -6,6 +6,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class UserServiceImplTest {
@@ -26,5 +28,14 @@ public class UserServiceImplTest {
         System.out.println(result);
         Assert.assertTrue("增加失败",result);
     }
+
+    @Test
+    public void testUserListSearch() throws Exception {
+        int result=2;
+        List<User> userlist=null;
+        userlist=userService.getUserList("");
+        Assert.assertEquals(result,userlist.size());
+    }
+
 
 }
