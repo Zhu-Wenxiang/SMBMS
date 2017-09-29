@@ -11,4 +11,6 @@ public class Constants {
     public final static String PASSWORD_ERROR_HINT="您的密码不正确，请重新输入";
     //存入request中的用户列表字符串
     public final static String USER_LIST="userlist";
+    //要查询的用户名
+    public final static String QUERY_NAME="queryName";
 }

@@ -15,15 +15,18 @@ import java.util.List;
 
 public class UserSearchServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       String userName=request.getParameter("userName");
+       //String userName=request.getParameter("userName");
+       String queryName=request.getParameter("queryName");
+       request.setAttribute(Constants.QUERY_NAME,queryName);
        List<User> userList=null;
        //一定要做非空验证，这样一开始请求的时候才能查找到数据
-        if (userName==null) {
-            userName="";
+        if (queryName==null) {
+            queryName="";
         }
         UserService userService=new UserServiceImpl();
-        userList=userService.getUserList(userName);
+        userList=userService.getUserList(queryName);
         request.setAttribute(Constants.USER_LIST,userList);
+        request.getRequestDispatcher("jsp/userlist.jsp").forward(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

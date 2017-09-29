@@ -7,6 +7,14 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee     http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
   <display-name>Archetype Created Web Application</display-name>
+    <filter>
+        <filter-name>CharacterEncoding</filter-name>
+        <filter-class>com.zwx.smbms.filter.CharacterEncoding</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterEncoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>com.zwx.smbms.servlet.LoginServlet</servlet-class>
@@ -22,5 +30,13 @@
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/logout.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserSearchServlet</servlet-name>
+        <servlet-class>com.zwx.smbms.servlet.UserSearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserSearchServlet</servlet-name>
+        <url-pattern>/usersearch.do</url-pattern>
     </servlet-mapping>
 </web-app>
