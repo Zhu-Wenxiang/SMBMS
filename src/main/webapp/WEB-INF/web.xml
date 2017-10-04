@@ -39,4 +39,12 @@
         <servlet-name>UserSearchServlet</servlet-name>
         <url-pattern>/usersearch.do</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>UserAddServlet</servlet-name>
+        <servlet-class>com.zwx.smbms.servlet.UserAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserAddServlet</servlet-name>
+        <url-pattern>/useradd.do</url-pattern>
+    </servlet-mapping>
 </web-app>

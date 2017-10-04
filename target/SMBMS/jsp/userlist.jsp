@@ -28,7 +28,7 @@
 <div class="main">
 
     <div class="optitle clearfix">
-        <em><input value="添加用户" class="input-button" onclick="window.location='userAdd.html'" type="button">
+        <em><input value="添加用户" class="input-button" onclick="window.location='${pageContext.request.contextPath}/jsp/useradd.jsp'" type="button">
         </em>
         <div class="title">用户管理&gt;&gt;</div>
     </div>

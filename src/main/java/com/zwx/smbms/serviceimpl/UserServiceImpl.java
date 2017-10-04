@@ -51,6 +51,7 @@ public class UserServiceImpl implements UserService{
         return flag;
     }
 
+    //通过特定用户名找到用户的方法
     public User login(String userCode) {
         Connection connection=null;
         User user=null;
@@ -67,6 +68,7 @@ public class UserServiceImpl implements UserService{
         return user;
     }
 
+    //通过用户名进行模糊查询查找用户列表
     public List<User> getUserList(String userName) {
         List<User> users=null;
         Connection connection=null;
@@ -84,4 +86,18 @@ public class UserServiceImpl implements UserService{
         }
         return users;
     }
+
+    //通过userCode看用户是否存在，如果存在，则该userCode已经注册，不存在则未注册
+    public User selectUserCodeExist(String userCode){
+        Connection connection=null;
+        User user=null;
+        try {
+            connection=BaseDao.getConnection();
+            user = userDao.getLoginUser(connection, userCode);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return user;
+    }
+
 }

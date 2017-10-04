@@ -12,4 +12,6 @@ public interface UserService {
     public User login(String userCode);
     //根据前台传来的userName查询用户列表
     public List<User> getUserList(String userName);
+    //通过userCode查看User，返回若为空，则该用户名可用
+    public User selectUserCodeExist(String userCode);
 }
