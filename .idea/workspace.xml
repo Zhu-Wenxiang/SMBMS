@@ -7,55 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="f851af35-4b52-4538-97bb-ae3010aee744" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/SMBMS_war.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS.war" afterPath="$PROJECT_DIR$/target/SMBMS.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/dao/BaseDao.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/dao/BaseDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/daoimpl/UserDaoImpl.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/daoimpl/UserDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/filter/CharacterEncoding.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/filter/CharacterEncoding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/pojo/Bill.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/pojo/Bill.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/pojo/Provider.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/pojo/Provider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/pojo/User.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/pojo/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/service/UserService.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/serviceimpl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/serviceimpl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/servlet/LoginServlet.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/servlet/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/servlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/servlet/LogoutServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/servlet/UserSearchServlet.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/servlet/UserSearchServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/tools/ConfigManager$1.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/tools/ConfigManager$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/tools/ConfigManager$ConfigManagerHelper.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/tools/ConfigManager$ConfigManagerHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/tools/ConfigManager.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/tools/ConfigManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/tools/Constants.class" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/classes/com/zwx/smbms/tools/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/dao/BaseDao.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/dao/BaseDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/daoimpl/UserDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/daoimpl/UserDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/filter/CharacterEncoding.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/filter/CharacterEncoding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/pojo/Bill.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/pojo/Bill.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/pojo/Provider.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/pojo/Provider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/pojo/User.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/pojo/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/serviceimpl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/serviceimpl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/servlet/LoginServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/servlet/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/servlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/servlet/LogoutServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/servlet/UserSearchServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/servlet/UserSearchServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/tools/ConfigManager$1.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/tools/ConfigManager$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/tools/ConfigManager$ConfigManagerHelper.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/tools/ConfigManager$ConfigManagerHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/tools/ConfigManager.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/tools/ConfigManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zwx/smbms/tools/Constants.class" afterPath="$PROJECT_DIR$/target/classes/com/zwx/smbms/tools/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/zwx/smbms/serviceimpl/UserServiceImplTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/zwx/smbms/serviceimpl/UserServiceImplTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SMBMS_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SMBMS_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SMBMS.iml" afterPath="$PROJECT_DIR$/SMBMS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zwx/smbms/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/zwx/smbms/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zwx/smbms/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/zwx/smbms/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zwx/smbms/serviceimpl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/zwx/smbms/serviceimpl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/left.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/left.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/userlist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/userlist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/SMBMS/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/jsp/left.jsp" afterPath="$PROJECT_DIR$/target/SMBMS/jsp/left.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SMBMS/jsp/userlist.jsp" afterPath="$PROJECT_DIR$/target/SMBMS/jsp/userlist.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zwx/smbms/tools/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/zwx/smbms/tools/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/user/useradd.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/user/useradd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/useradd.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/useradd.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -94,24 +48,14 @@
     <favorites_list name="SMBMS" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47693452">
+    <splitter split-orientation="horizontal" split-proportion="0.52781844">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file leaf-file-name="useradd.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/useradd.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/common.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+                <state relative-caret-position="345">
+                  <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -120,52 +64,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="UserAddServlet.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/servlet/UserAddServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="456">
-                  <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#doGet#0;class#UserAddServlet#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/serviceimpl/UserServiceImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="412">
-                  <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
-                  <folding>
-                    <element signature="method#add#0;class#UserServiceImpl#0" expanded="false" />
-                    <element signature="method#login#0;class#UserServiceImpl#0" expanded="false" />
-                    <element signature="method#getUserList#0;class#UserServiceImpl#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/daoimpl/UserDaoImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-                  <folding>
-                    <element signature="method#getUserList#0;class#UserDaoImpl#0" expanded="false" />
-                    <marker date="1506268225385" expanded="true" signature="2666:2712" ph="select * fro... smbms_user" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="useradd.jsp" pinned="false" current-in-tab="false">
+        <leaf>
+          <file leaf-file-name="useradd.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/useradd.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="72" column="29" lean-forward="true" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+                <state relative-caret-position="288">
+                  <caret line="56" column="43" lean-forward="false" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
@@ -213,7 +117,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/frame.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zwx/smbms/daoimpl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/test/com/zwx/smbms/serviceimpl/UserServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zwx/smbms/tools/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zwx/smbms/filter/CharacterEncoding.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zwx/smbms/servlet/UserSearchServlet.java" />
@@ -227,10 +130,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zwx/smbms/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zwx/smbms/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/user/useradd.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/useradd.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zwx/smbms/servlet/UserAddServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zwx/smbms/serviceimpl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/useradd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/user/useradd.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zwx/smbms/tools/Constants.java" />
       </list>
     </option>
   </component>
@@ -768,7 +672,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="smbms" type="462c0819:PsiDirectoryNode" />
-              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SMBMS" type="b2602c69:ProjectViewProjectNode" />
@@ -793,14 +697,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SMBMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SMBMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SMBMS" type="b2602c69:ProjectViewProjectNode" />
@@ -1198,7 +1094,7 @@
       <workItem from="1506697474681" duration="3035000" />
       <workItem from="1506836006886" duration="7345000" />
       <workItem from="1506927554976" duration="38803000" />
-      <workItem from="1507085115602" duration="3059000" />
+      <workItem from="1507085115602" duration="13155000" />
     </task>
     <servers />
   </component>
@@ -1229,7 +1125,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204105000" />
+    <option name="totallyTimeSpent" value="214201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1242,6 +1138,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28633094" sideWeight="0.5029762" order="3" side_tool="true" content_ui="tabs" />
@@ -1261,9 +1158,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266187" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266187" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6589928" sideWeight="0.49702382" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6589928" sideWeight="0.49702382" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266187" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20163691" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20131771" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1484,24 +1381,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="70" lean-forward="false" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/servlet/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="67" lean-forward="false" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -1536,14 +1419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/userlist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/calendar/lang/en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1564,13 +1439,6 @@
             <marker date="1381764191597" expanded="true" signature="1285:1297" ph="..." />
             <marker date="1381764191597" expanded="true" signature="7128:7148" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/servlet/UserSearchServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1607,6 +1475,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1614,13 +1483,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/tools/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <marker date="1506951843973" expanded="true" signature="59:379" ph="..." />
+            <marker date="1506951843973" expanded="true" signature="121:368" ph="..." />
+            <marker date="1506951843973" expanded="true" signature="138:353" ph="..." />
+            <marker date="1506951843973" expanded="true" signature="169:335" ph="..." />
+            <marker date="1506951843973" expanded="true" signature="190:320" ph="..." />
+            <marker date="1506951843973" expanded="true" signature="211:298" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1639,14 +1509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -1661,14 +1523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -1677,28 +1531,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/useradd.js">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="513">
+          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <marker date="1507035371340" expanded="true" signature="104:1504" ph="..." />
+            <marker date="1507035371340" expanded="true" signature="478:602" ph="..." />
+            <marker date="1507035371340" expanded="true" signature="620:1439" ph="..." />
+            <marker date="1507035371340" expanded="true" signature="637:779" ph="..." />
+            <marker date="1507035371340" expanded="true" signature="796:929" ph="..." />
+            <marker date="1507035371340" expanded="true" signature="946:1113" ph="..." />
+            <marker date="1507035371340" expanded="true" signature="1130:1277" ph="..." />
+            <marker date="1507035371340" expanded="true" signature="1294:1421" ph="..." />
+            <marker date="1507035371340" expanded="true" signature="1449:1493" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/useradd.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/servlet/UserAddServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="72" column="29" lean-forward="true" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="177">
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <marker date="1507090645955" expanded="true" signature="39:483" ph="..." />
+            <marker date="1507090645955" expanded="true" signature="656:892" ph="{...}" />
+            <marker date="1507090645955" expanded="false" signature="1014:1055" ph="{...}" />
+            <marker date="1507090645955" expanded="true" signature="1167:2402" ph="{...}" />
+            <marker date="1507090645955" expanded="false" signature="1366:1382" ph="&lt;~&gt;" />
+            <marker date="1507090645955" expanded="true" signature="2023:2072" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/daoimpl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state relative-caret-position="768">
+          <caret line="40" column="56" lean-forward="true" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
           <folding>
-            <element signature="method#getUserList#0;class#UserDaoImpl#0" expanded="false" />
+            <marker date="1506268225385" expanded="false" signature="39:273" ph="..." />
+            <marker date="1506268225385" expanded="true" signature="409:899" ph="{...}" />
+            <marker date="1506268225385" expanded="true" signature="1024:2360" ph="{...}" />
+            <marker date="1506268225385" expanded="false" signature="2487:3944" ph="{...}" />
+            <marker date="1506268225385" expanded="false" signature="2601:2607" ph="&lt;~&gt;" />
             <marker date="1506268225385" expanded="true" signature="2666:2712" ph="select * fro... smbms_user" />
           </folding>
         </state>
@@ -1706,24 +1581,124 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/serviceimpl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+        <state relative-caret-position="120">
+          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding>
-            <element signature="method#add#0;class#UserServiceImpl#0" expanded="false" />
-            <element signature="method#login#0;class#UserServiceImpl#0" expanded="false" />
-            <element signature="method#getUserList#0;class#UserServiceImpl#0" expanded="false" />
+            <marker date="1507090707252" expanded="false" signature="43:336" ph="..." />
+            <marker date="1507090707252" expanded="false" signature="450:460" ph=" { " />
+            <marker date="1507090707252" expanded="false" signature="486:492" ph=" }" />
+            <marker date="1507090707252" expanded="false" signature="566:1476" ph="{...}" />
+            <marker date="1507090707252" expanded="false" signature="1538:1972" ph="{...}" />
+            <marker date="1507090707252" expanded="false" signature="2049:2511" ph="{...}" />
+            <marker date="1507090707252" expanded="true" signature="2617:2905" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/servlet/UserAddServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/servlet/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        <state relative-caret-position="504">
+          <caret line="26" column="65" lean-forward="true" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#doGet#0;class#UserAddServlet#0" expanded="false" />
+            <marker date="1506234507308" expanded="false" signature="39:222" ph="..." />
+            <marker date="1506234507308" expanded="true" signature="464:1686" ph="{...}" />
+            <marker date="1506234507308" expanded="true" signature="1860:1901" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/servlet/UserSearchServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <marker date="1506692489753" expanded="false" signature="39:444" ph="..." />
+            <marker date="1506692489753" expanded="true" signature="620:1194" ph="{...}" />
+            <marker date="1506692489753" expanded="true" signature="1316:1357" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/userlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+          <folding>
+            <marker date="1506845002236" expanded="true" signature="177:2931" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="184:398" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="405:2923" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="425:968" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="438:961" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="454:948" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="467:931" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="484:917" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="579:899" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="798:804" ph="&amp;nbsp;" />
+            <marker date="1506845002236" expanded="true" signature="804:810" ph="&amp;nbsp;" />
+            <marker date="1506845002236" expanded="true" signature="810:816" ph="&amp;nbsp;" />
+            <marker date="1506845002236" expanded="true" signature="816:822" ph="&amp;nbsp;" />
+            <marker date="1506845002236" expanded="true" signature="987:2914" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="1023:1241" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="1036:1184" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="1217:1221" ph="&amp;gt;" />
+            <marker date="1506845002236" expanded="true" signature="1221:1225" ph="&amp;gt;" />
+            <marker date="1506845002236" expanded="true" signature="1267:2907" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="1296:2896" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="1316:2879" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="1333:1933" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="2007:2858" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="2028:2833" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="2145:2299" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="2408:2640" ph="..." />
+            <marker date="1506845002236" expanded="true" signature="2665:2811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding>
+            <marker date="1505870489688" expanded="true" signature="177:654" ph="..." />
+            <marker date="1505870489688" expanded="true" signature="184:523" ph="..." />
+            <marker date="1505870489688" expanded="true" signature="530:646" ph="..." />
+            <marker date="1505870489688" expanded="true" signature="548:638" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zwx/smbms/tools/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <marker date="1507017554774" expanded="true" signature="221:361" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/useradd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/useradd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="56" column="43" lean-forward="false" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

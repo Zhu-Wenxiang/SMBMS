@@ -1,7 +1,7 @@
 package com.zwx.smbms.tools;
 
 public class Constants {
-    //用户的session常量
+    //用户的session常量,存储user对象的键名称
     public final static String USER_SESSION="userSession";
     //用户名错误的显示信息
     public final static String NO_SUCH_USER="noSuchUser";

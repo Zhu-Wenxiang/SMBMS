@@ -27,8 +27,8 @@ $(function () {
         $.ajax({
             type:"GET",//请求类型
             url:path+"/useradd.do",//请求的Servlet
-            data:{method:"userCodeVerify",userCode:userCode.val()},
-            dataType:"json",
+            data:{method:"userCodeVerify",userCode:userCode.val()},//请求Servlet时所携带的数据
+            dataType:"json",//返回数据的类型
             success:function (data) {//data是方法调用成功所返回的数据
                 //如果账号已存在，则提示已存在
                 if (data.userCode=='exist') {
@@ -37,7 +37,7 @@ $(function () {
                     validateTip(userCode.next(),{"color":"green"},imgYes+"该账号可以使用",true);
                 }
             },
-            error:function () {
+            error:function () {//当访问时出现404,500等状态码时
                 validateTip(userCode.next(),{"color":"red"},"您所访问的页面不存在",false);
             }
         });
