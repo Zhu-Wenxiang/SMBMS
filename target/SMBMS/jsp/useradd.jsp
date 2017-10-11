@@ -20,14 +20,14 @@
             <table class="box">
                 <tbody>
                 <tr>
-                    <td class="field">用户名：</td>
-                    <td><input type="text" name="userName" class="text" id="userName" value="">
+                    <td class="field">用户账号：</td>
+                    <td><input type="text" name="userCode" class="text" id="userCode" value="">
                         <font color="red"></font>
                     </td>
                 </tr>
                 <tr>
-                    <td class="field">用户账号：</td>
-                    <td><input type="text" name="userCode" class="text" id="userCode" value="">
+                    <td class="field">用户名：</td>
+                    <td><input type="text" name="userName" class="text" id="userName" value="">
                         <font color="red"></font>
                     <td>
                 </tr>

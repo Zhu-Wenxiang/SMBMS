@@ -14,4 +14,7 @@ public interface UserDao {
 
     //查询用户列表,可根据传入的用户名进行模糊查询
     public List<User> getUserList(Connection connection,String userName) throws Exception;
+
+    //通过特定的userName查找某一个具体用户，主要用于检查用户名是否有重复
+    public User getUserByUserName(Connection connection,String userName) throws Exception;
 }

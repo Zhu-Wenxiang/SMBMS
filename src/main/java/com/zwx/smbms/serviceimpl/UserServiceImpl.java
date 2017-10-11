@@ -51,7 +51,7 @@ public class UserServiceImpl implements UserService{
         return flag;
     }
 
-    //通过特定用户名找到用户的方法
+    //通过特定userCode找到用户的方法
     public User login(String userCode) {
         Connection connection=null;
         User user=null;
@@ -100,4 +100,16 @@ public class UserServiceImpl implements UserService{
         return user;
     }
 
+    //根据userName查询特定User的方法,用于检查userName是否重复
+    public User getUserByUserName(String userName) {
+        Connection connection=null;
+        User user=null;
+        try {
+            connection=BaseDao.getConnection();
+            user=userDao.getUserByUserName(connection,userName);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return user;
+    }
 }

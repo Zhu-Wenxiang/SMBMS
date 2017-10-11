@@ -87,4 +87,32 @@ public class UserDaoImpl implements UserDao{
         BaseDao.closeResource(null,pstm,resultSet);
         return userList;
     }
+
+    public User getUserByUserName(Connection connection, String userName) throws Exception {
+        PreparedStatement preparedStatement=null;
+        ResultSet resultSet=null;
+        User user=null;
+        String sql="select * from smbms_user where userName=?";
+        Object[] params={userName};
+        if (connection!=null) {
+            resultSet=BaseDao.execute(connection,preparedStatement,resultSet,sql,params);
+            if (resultSet.next()) {
+                user=new User();
+                user.setUserName(resultSet.getString("userName"));
+                user.setUserPassword(resultSet.getString("userPassword"));
+                user.setUserCode(resultSet.getString("userCode"));
+                user.setBirthday(resultSet.getDate("birthday"));
+                user.setCreationTime(resultSet.getTimestamp("creationDate"));
+                user.setId(resultSet.getInt("id"));
+                user.setAddress(resultSet.getString("address"));
+                user.setCreatedBy(resultSet.getInt("createdBy"));
+                user.setModifyBy(resultSet.getInt("modifyBy"));
+                user.setGender(resultSet.getInt("gender"));
+                user.setPhone(resultSet.getString("phone"));
+                user.setUserType(resultSet.getInt("userType"));
+                user.setModifyTime(resultSet.getDate("modifyDate"));
+            }
+        }
+        return user;
+    }
 }

@@ -15,11 +15,20 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 
 public class UserAddServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        UserService userService=new UserServiceImpl();
+        HashMap<String,String> resultMap=new HashMap<String, String>();
         String method=request.getParameter("method");
         System.out.println("取到的method是========="+method);
         if (method!=null&&method.equals("userCodeVerify")) {
-            userCodeVerify(request,response);
+            this.userCodeVerify(request,response,userService,resultMap);
+        } else if (method!=null&&method.equals("userNameVerify")) {
+            try {
+                this.userNameVerify(request,response,userService,resultMap);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -27,17 +36,16 @@ public class UserAddServlet extends HttpServlet {
         doPost(request,response);
     }
 
-    protected void userCodeVerify(HttpServletRequest request,HttpServletResponse response) throws IOException {
+    //Ajax异步验证userCode是否存在的方法
+    protected void userCodeVerify(HttpServletRequest request,HttpServletResponse response,UserService userService,HashMap resultMap) throws IOException {
         String userCode=request.getParameter("userCode");
         User user=null;
         System.out.println("查看userCode是否被取到======="+userCode);
-        HashMap<String,String> resultMap=new HashMap<String, String>();
         //根据userCode查找User
         if (StringUtils.isNullOrEmpty(userCode)) {//判断userCode是否为空
-            resultMap.put("userCode","exist");
+            resultMap.put("userCode","userCodeNull");
         } else {
             //若不为空，则使用service方法验证
-            UserService userService=new UserServiceImpl();
             user=userService.selectUserCodeExist(userCode);
             System.out.print("查看user是否为空======="+user);
             //根据User是否为空，判断该userCode是否可用
@@ -61,4 +69,28 @@ public class UserAddServlet extends HttpServlet {
         //关闭流
         printWriter.close();
     }
+
+    //userName异步验证函数的请求方法
+    protected void userNameVerify(HttpServletRequest request,HttpServletResponse response,UserService userService,HashMap resultMap) throws Exception{
+        String userName=request.getParameter("userName");
+        System.out.println("在userAddServlet中取到的userName是======="+userName);
+        User user=null;
+        if (StringUtils.isNullOrEmpty(userName)) {//判断userName是否为空
+            resultMap.put("result","userNameNull");
+        }else{//userName不为空的情况下，得到的结果
+            user=userService.getUserByUserName(userName);
+            if (null == user) {
+                resultMap.put("result", "userNameUsable");
+            } else {
+                resultMap.put("result","userNameExist");
+            }
+        }
+        //把结果转成json输出到jsp页面中
+        response.setContentType("application/json");
+        PrintWriter printWriter=response.getWriter();
+        printWriter.write(JSONArray.toJSONString(resultMap));
+        printWriter.flush();
+        printWriter.close();
+    }
+
 }

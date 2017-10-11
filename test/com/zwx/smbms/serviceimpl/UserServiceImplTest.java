@@ -37,5 +37,14 @@ public class UserServiceImplTest {
         Assert.assertEquals(result,userlist.size());
     }
 
+    @Test
+    public void testGetUserByUserName() throws Exception{
+        String name1="王嘉尔";
+        String name2="韩";
+        String name3="韩云溪";
+        User user=userService.getUserByUserName(name3);
+        Assert.assertNotNull("查找失败",user);
+    }
+
 
 }

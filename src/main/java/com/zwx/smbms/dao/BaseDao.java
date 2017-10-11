@@ -58,6 +58,7 @@ public class BaseDao {
     //查询方法
     public static ResultSet execute(Connection connection,PreparedStatement pstm,ResultSet rs,String sql,Object[] params) throws SQLException {
         pstm=connection.prepareStatement(sql);
+        //pstm中的参数从1开始，数组的下标从0开始
         for (int i = 0; i <params.length ; i++) {
            pstm.setObject(i+1,params[i]);
         }
