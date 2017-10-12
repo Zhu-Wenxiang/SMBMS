@@ -9,11 +9,12 @@
 <body>
 <div class="main">
     <input type="hidden" id="path" name="path" value="${pageContext.request.contextPath}"/>
+    <input type="hidden" id="add" name="addUser" value="add"/>
     <div class="optitle clearfix">
         <div class="title">用户管理&gt;&gt;</div>
 
     </div>
-    <form id="userAddForm" name="userAddform" method="post" action="/useradd.do">
+    <form id="userAddForm" name="userAddForm" method="post" action="/useradd.do?method=addUser">
         <!--单独建立了对应的Servlet，无需使用该hidden标识名 -->
         <!--<input type="hidden" name="method" value="add">-->
         <div class="content">
@@ -78,7 +79,7 @@
             </table>
         </div>
         <div class="buttons">
-            <input type="button" name="addBtn" id="addBtn" value="保存" class="input-button">
+            <input type="submit" name="addBtn" id="addBtn" value="保存" class="input-button">
             <input type="button" name="button" id="button" onclick="history.back(-1)" value="返回" class="input-button">
         </div>
     </form>

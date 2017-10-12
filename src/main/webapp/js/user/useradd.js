@@ -5,6 +5,7 @@ var rpassword=null;
 var birthDate=null;
 var phone=null;
 var addBtn=null;
+var userAddForm=null;
 
 $(function () {
     userName=$("#userName");
@@ -14,6 +15,7 @@ $(function () {
     birthDate=$("#birthDate");
     phone=$("#phone");
     addBtn=$("#addBtn");
+    userAddForm=$("#userAddForm");
     //在每个必填项后面加上红*
     userName.next().html("*");
     userCode.next().html("*");
@@ -27,7 +29,7 @@ $(function () {
         $.ajax({
             type:"GET",//请求类型
             url:path+"/useradd.do",//请求的Servlet
-            data:{method:"userCodeVerify",userCode:userCode.val()},//请求Servlet时所携带的数据
+            data:{ajaxmethod:"userCodeVerify",userCode:userCode.val()},//请求Servlet时所携带的数据
             dataType:"json",//返回数据的类型
             success:function (data) {//data是方法调用成功所返回的数据
                 //如果账号已存在，则提示已存在
@@ -54,7 +56,7 @@ $(function () {
         $.ajax({
             type:"GET",
             url:path+"/useradd.do",
-            data:{method:"userNameVerify",userName:userName.val()},
+            data:{ajaxmethod:"userNameVerify",userName:userName.val()},
             dataType:"json",
             success:function (data) {//通过后台传过来的键值对，进行相应提示
                 if (data.result=="userNameNull") {
@@ -72,5 +74,69 @@ $(function () {
     }).on("focus",function () {
        validateTip(userName.next(),{"color":"#666666"},"* 用户名是您的昵称");
     });
+
+    //给userPassword绑定验证方法
+    userPassword.on("blur",function () {
+        if (userPassword.val()!=null && userPassword.val().length>5 && userPassword.val().length<20) {
+            validateTip(userPassword.next(),{"color":"green"},imgYes,true);
+        }else{
+            validateTip(userPassword.next(),{"color":"red"},imgNo+" 密码不符合要求",false);
+        }
+    }).on("focus",function () {
+       validateTip(userPassword.next(),{"color":"#666666"},"* 密码长度必须大于等于6小于20",false);
+    })
+
+    //给rpassword绑定验证方法
+    rpassword.on("blur",function () {
+        if (rpassword.val()!=null&&rpassword.val()==userPassword.val()) {
+            validateTip(rpassword.next(),{"color":"green"},imgYes,true);
+        }else {
+            validateTip(rpassword.next(),{"color":"red"},imgNo+" 您的重复密码输入的不正确",false);
+        }
+    }).on("focus",function () {
+       validateTip(rpassword.next(),{"color":"#666666"},"* 请再次输入密码",false);
+    })
+
+    //给birthDate绑定非空验证
+    birthDate.on("blur",function () {
+        if (birthDate.val()==null) {
+            validateTip(birthDate.next(),{"color":"red"},imgNo+"出生日期不能为空",false);
+        }else {
+            validateTip(birthDate.next(),{"color":"green"},imgYes,true);
+        }
+    })
+
+    //使用正则验证电话号码是否符合要求
+    phone.on("blur",function () {
+        var phonePattern=/^(13[0-9]|15[0-9]|18[0-9])\d{4,8}$/;
+        if (phone.val().match(phonePattern)) {
+            validateTip(phone.next(),{"color":"green"},imgYes,true);
+        }else {
+            validateTip(phone.next(),{"color":"red"},imgNo+" 手机号码的形式不正确",false);
+        }
+    }).on("focus",function () {
+       validateTip(phone.next(),{"color":"#666666"},"请填写您的手机号",false);
+    })
+
+    //验证各必填行是否全部填写完毕,并提交数据
+    addBtn.on("click",function () {
+        if (userCode.attr("validateStatus")!=true) {
+            userCode.blur();
+        }else if(userName.attr("validateStatus")!=true){
+            userName.blur();
+        }else if(userPassword.attr("validateStatus")!=true){
+            userPassword.blur();
+        }else if(rpassword.attr("validateStatus")!=true){
+            rpassword.blur();
+        }else if (birthDate.attr("validateStatus")!=true) {
+            birthDate.blur();
+        }else if(phone.attr("validateStatus")!=true){
+            phone.blur();
+        }else{
+            if (confirm("您确定要提交吗？")) {
+                userAddForm.submit();
+            }
+        }
+    })
 })
 

@@ -56,8 +56,8 @@
                     <td>${user.phone}</td>
                     <td>
                         <c:if test="${user.userType==1}">系统管理员</c:if>
-                        <c:if test="${user.userType==2}">经理</c:if>
-                        <c:if test="${user.userType==3}">普通员工</c:if>
+                        <c:if test="${user.userType==3}">经理</c:if>
+                        <c:if test="${user.userType==2}">普通员工</c:if>
                     </td>
                     <td>
                         <span>查看</span>
