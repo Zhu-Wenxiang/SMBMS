@@ -9,7 +9,7 @@
 <body>
 
 <div class="menu">
-
+<input type="hidden" name="path" id="path" value="${pageContext.request.contextPath}">
     <table>
         <tbody>
         <tr>
@@ -60,9 +60,9 @@
                         <c:if test="${user.userType==2}">普通员工</c:if>
                     </td>
                     <td>
-                        <span>查看</span>
-                        <span>修改</span>
-                        <span>删除</span>
+                        <span><a class="viewUser" href="javascript:;" userid="${user.id}" username="${user.userName}" userCode="${user.userCode}">查看</a></span>
+                        <span><a class="modifyUser" href="javascript:;" userid="${user.id}" username="${user.userName}">修改</a></span>
+                        <span><a class="deleteUser" href="javascript:;" userid="${user.id}" username="${user.userName}">删除</a></span>
                     </td>
                 </tr>
             </c:forEach>
@@ -72,4 +72,7 @@
 </div>
 
 </body>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/user/common.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/user/userlist.js"></script>
 </html>

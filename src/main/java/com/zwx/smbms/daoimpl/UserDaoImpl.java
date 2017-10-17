@@ -88,6 +88,7 @@ public class UserDaoImpl implements UserDao{
         return userList;
     }
 
+    //根据用户名精确查找用户
     public User getUserByUserName(Connection connection, String userName) throws Exception {
         PreparedStatement preparedStatement=null;
         ResultSet resultSet=null;
@@ -113,6 +114,34 @@ public class UserDaoImpl implements UserDao{
                 user.setModifyTime(resultSet.getDate("modifyDate"));
             }
         }
+        BaseDao.closeResource(null,preparedStatement,resultSet);
         return user;
     }
+
+    //根据用户id删除用户
+    public int deleteUserByID(Connection connection, Integer id) throws Exception{
+        int updateRows=0;
+        if (connection!=null) {
+            String sql="delete from smbms_user where id=?";
+            PreparedStatement preparedStatement=null;
+            Object[] params={id};
+            updateRows=BaseDao.execute(connection,preparedStatement,sql,params);
+            BaseDao.closeResource(null,preparedStatement,null);
+        }
+        return updateRows;
+    }
+
+    //更新用户数据
+    public int updateUser(Connection connection, User user) throws Exception {
+        PreparedStatement preparedStatement=null;
+        int updateRows=-1;
+        if (connection!=null) {
+           String sql="update smbms_user set userName=?,gender=?,birthday=?,phone=?,address=?,userType=?,modifyBy=?,modifyDate=? where id=?";
+           Object[] params={user.getUserName(),user.getGender(),user.getBirthday(),user.getPhone(),user.getAddress(),user.getUserType(),user.getModifyBy(),user.getModifyTime(),user.getId()};
+           updateRows=BaseDao.execute(connection,preparedStatement,sql,params);
+           BaseDao.closeResource(null,preparedStatement,null);
+        }
+        return updateRows;
+    }
+
 }

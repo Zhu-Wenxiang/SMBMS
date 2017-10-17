@@ -47,4 +47,36 @@
         <servlet-name>UserAddServlet</servlet-name>
         <url-pattern>/useradd.do</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>UserDeleteServlet</servlet-name>
+        <servlet-class>com.zwx.smbms.servlet.UserDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserDeleteServlet</servlet-name>
+        <url-pattern>/userdelete.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserModifyServlet</servlet-name>
+        <servlet-class>com.zwx.smbms.servlet.UserModifyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserModifyServlet</servlet-name>
+        <url-pattern>/modifyuser.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserModifyAjaxServlet</servlet-name>
+        <servlet-class>com.zwx.smbms.servlet.UserModifyAjaxServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserModifyAjaxServlet</servlet-name>
+        <url-pattern>/usermodifyajax.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ViewUserServlet</servlet-name>
+        <servlet-class>com.zwx.smbms.servlet.ViewUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewUserServlet</servlet-name>
+        <url-pattern>/viewuser.do</url-pattern>
+    </servlet-mapping>
 </web-app>

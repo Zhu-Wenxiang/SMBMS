@@ -16,4 +16,8 @@ public interface UserService {
     public User selectUserCodeExist(String userCode);
     //通过UserName查询特定的User，返回若为空，则该用户名可用
     public User getUserByUserName(String userName);
+    //通过id删除用户
+    public Boolean deleteUserById(Integer id) ;
+    //更新用户数据
+    public boolean updateUser(User user);
 }

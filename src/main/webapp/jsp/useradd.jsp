@@ -79,7 +79,7 @@
             </table>
         </div>
         <div class="buttons">
-            <input type="submit" name="addBtn" id="addBtn" value="保存" class="input-button">
+            <input type="button" name="addBtn" id="addBtn" value="保存" class="input-button">
             <input type="button" name="button" id="button" onclick="history.back(-1)" value="返回" class="input-button">
         </div>
     </form>

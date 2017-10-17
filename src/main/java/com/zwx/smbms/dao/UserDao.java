@@ -17,4 +17,11 @@ public interface UserDao {
 
     //通过特定的userName查找某一个具体用户，主要用于检查用户名是否有重复
     public User getUserByUserName(Connection connection,String userName) throws Exception;
+
+    //通过指定userid删除指定用户
+    public int deleteUserByID(Connection connection,Integer id) throws Exception;
+
+    //修改用户数据
+    public int updateUser(Connection connection,User user) throws Exception;
+
 }

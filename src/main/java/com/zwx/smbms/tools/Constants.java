@@ -13,4 +13,10 @@ public class Constants {
     public final static String USER_LIST="userlist";
     //要查询的用户名
     public final static String QUERY_NAME="queryName";
+    //在userModifyAjaxServlet中要使用到的userName是否重复的提示字符串
+    public final static String DUPLICATE_USER_NAME="userNameDuplicate";
+    public final static String NOT_DUPLICATE_USER_NAME= "userNameNotDuplicate";
+    //在ViewUserServlet中用来存储获得的user对象的key
+    public final static String USER_IN_VIEW="userInView";
+    public final static String ALERT_MESSAGE="出现未知错误,该用户不存在";
 }

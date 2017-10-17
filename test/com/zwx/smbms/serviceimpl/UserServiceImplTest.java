@@ -37,6 +37,7 @@ public class UserServiceImplTest {
         Assert.assertEquals(result,userlist.size());
     }
 
+    //测试通过用户名精确查找用户是否正常
     @Test
     public void testGetUserByUserName() throws Exception{
         String name1="王嘉尔";
@@ -44,6 +45,16 @@ public class UserServiceImplTest {
         String name3="韩云溪";
         User user=userService.getUserByUserName(name3);
         Assert.assertNotNull("查找失败",user);
+    }
+
+    //测试更新操作是否正常
+    @Test
+    public void testUpateUser()throws Exception{
+        User user=new User();
+        user.setAddress("云南路");
+        user.setId(13);
+        boolean flag=userService.updateUser(user);
+        Assert.assertTrue("修改失败",flag);
     }
 
 

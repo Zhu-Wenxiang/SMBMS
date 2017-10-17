@@ -5,7 +5,6 @@ var rpassword=null;
 var birthDate=null;
 var phone=null;
 var addBtn=null;
-var userAddForm=null;
 
 $(function () {
     userName=$("#userName");
@@ -15,7 +14,6 @@ $(function () {
     birthDate=$("#birthDate");
     phone=$("#phone");
     addBtn=$("#addBtn");
-    userAddForm=$("#userAddForm");
     //在每个必填项后面加上红*
     userName.next().html("*");
     userCode.next().html("*");
@@ -83,7 +81,7 @@ $(function () {
             validateTip(userPassword.next(),{"color":"red"},imgNo+" 密码不符合要求",false);
         }
     }).on("focus",function () {
-       validateTip(userPassword.next(),{"color":"#666666"},"* 密码长度必须大于6小于20",false);
+       validateTip(userPassword.next(),{"color":"#666666"},"* 密码长度必须大于等于6小于20",false);
     })
 
     //给rpassword绑定验证方法
@@ -99,16 +97,18 @@ $(function () {
 
     //给birthDate绑定非空验证
     birthDate.on("blur",function () {
-        if (birthDate.val()==null) {
-            validateTip(birthDate.next(),{"color":"red"},imgNo+"出生日期不能为空",false);
-        }else {
+        if (birthDate.val()!=null&&birthDate.val()!="") {
             validateTip(birthDate.next(),{"color":"green"},imgYes,true);
+        }else {
+            validateTip(birthDate.next(),{"color":"red"},imgNo+"出生日期不能为空",false);
         }
+    }).on("focus",function () {
+        validateTip(birthDate.next(),{"color":"#666666"},"请选择您的出生日期",false);
     })
 
     //使用正则验证电话号码是否符合要求
     phone.on("blur",function () {
-        var phonePattern=/^(13[0-9]|15[0-9]|18[0-9])\d{4,8}$/;
+        var phonePattern=/^(13[0-9]|15[0-9]|18[0-9])\d{8}$/;
         if (phone.val().match(phonePattern)) {
             validateTip(phone.next(),{"color":"green"},imgYes,true);
         }else {
@@ -120,21 +120,24 @@ $(function () {
 
     //验证各必填行是否全部填写完毕,并提交数据
     addBtn.on("click",function () {
-        if (userCode.attr("validateStatus")!=true) {
+        //这里validateStatus属性对应的值是字符串形式
+        if (userCode.attr("validateStatus")!="true"&&userCode.attr("validateStatus")==null) {
+            alert("请填写用户名及其他必填项");
             userCode.blur();
-        }else if(userName.attr("validateStatus")!=true){
+        }else if(userName.attr("validateStatus")!="true"&&userName.attr("validateStatus")==null){
             userName.blur();
-        }else if(userPassword.attr("validateStatus")!=true){
+        }else if(userPassword.attr("validateStatus")!="true"&&userPassword.attr("validateStatus")==null){
             userPassword.blur();
-        }else if(rpassword.attr("validateStatus")!=true){
+        }else if(rpassword.attr("validateStatus")!="true"&&rpassword.attr("validateStatus")==null){
             rpassword.blur();
-        }else if (birthDate.attr("validateStatus")!=true) {
+        }else if (birthDate.attr("validateStatus")!="true"&&birthDate.attr("validateStatus")==null) {
             birthDate.blur();
-        }else if(phone.attr("validateStatus")!=true){
+        }else if(phone.attr("validateStatus")!="true"&&birthDate.attr("validateStatus")==null){
+            alert("请填写手机号码");
             phone.blur();
         }else{
             if (confirm("您确定要提交吗？")) {
-                userAddForm.submit();
+                $("#userAddForm").submit();
             }
         }
     })
